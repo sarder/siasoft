@@ -1,0 +1,105 @@
+﻿
+
+
+.bds-left-margin {
+     margin-left:1px;
+}
+
+.bds-left-margin-one {
+     margin-left:-1px;
+}
+
+.bds-nuMin-pos{
+     padding-top :5px;
+     padding-right:0px;
+}
+
+.bds-left-padd-zero{
+    padding-left:0px;
+}
+
+.bds-clear-both {
+    clear :both ;
+}
+
+
+/*all numeric box style*/
+.k-numeric-wrap.k-state-default{
+    height: 38px !important;
+}
+
+span.k-numerictextbox {
+     margin-top: 0px;
+}
+
+.k-numeric-wrap .k-input{
+    height:33px !important ;
+}
+
+.k-numeric-wrap.k-state-hover{
+ height: 38px !important;
+}
+
+/**/
+
+.clear-div {
+    height: auto;
+    overflow: hidden;
+}
+
+
+/*notes eDocument related code*/
+
+
+.k-grid-content, #divEdocumentsGrid
+{
+    height:446px;
+}
+
+
+
+.edocnew-grid {
+    display: block;
+    float: left;
+    height: auto;
+    overflow: hidden;
+    width: 70%;
+   /* border: 1px dashed #ddd;*/
+    margin-bottom: 5px;
+}
+
+k-button.k-upload-button {
+    background: none !important;
+    border: none;
+    color: rgb(0, 174, 239) !important;
+    padding: 0px !important;
+    font-size: 18px !important;
+    text-transform: lowercase;
+}
+
+
+.k-upload.k-header {
+    border: 1px dashed #cecece;
+    padding: 0% !important;
+    background-color: #fff;
+    text-align: center;
+}
+
+
+.dropZoneElement .textWrapper {
+    display: none;
+}
+.k-dropzone.k-dropzone-hovered {
+    background: #F4F4F4;
+}
+
+/*.newdocument .k-widget.k-upload {
+    float: left;
+    overflow: hidden;
+    margin-top: -35px;
+    margin-left: 1px;
+    border: none !important;
+    max-width: 300px;
+    background: transparent !important;
+    margin-left: 154px;
+}*/
