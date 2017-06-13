@@ -1,0 +1,137 @@
+﻿#suSlideDetails {
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    cursor: pointer;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    margin-left: -16%;
+}
+
+.su-close {
+    cursor: pointer;
+}
+
+.slide-row {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.su-slide-panel {
+    z-index: 10000;
+    position: fixed;
+    padding: 20px 15px;
+    right: -360px;
+    width: 360px;
+    height: 100%;
+    background: #f2f2f2;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.slide-box-left {
+    float: left;
+    width: 35px;
+    min-height: 35px;
+}
+
+.slide-box-right {
+    float: right;
+    width: 241px;
+}
+
+
+.su-avatar-img img {
+    display: block;
+    max-width: 90px;
+    max-height: 90px;
+    padding: 10px 0px;
+    margin-top: 0px;
+    border-radius: 50%;
+}
+
+.su-slider-header {
+    color: #17355d;
+    margin: 10px 0px;
+    font-weight: bold;
+}
+p.su-slide-content {
+    color: #c2c7ca;
+}
+
+p.bds-margin-bottom10,.bds-margin-bottom10 {
+    margin-bottom: 10px;
+}
+
+.slide-box-single {
+
+    background: #ffffff;
+    padding: 10px 20px;
+    border: 1px solid #d8d8d8;
+    border-radius: 1px;
+    margin-bottom: 15px;
+}
+
+.bds-red-circle {
+    background-image: url(../../images/bds-red.png);
+    background-repeat: no-repeat;
+    background-position: 0px 6px;
+    background-size: 22px;
+}
+
+.bds-green-circle {
+    background-image: url(../../images/bds-green.png);
+    background-repeat: no-repeat;
+    background-position: 0px 6px;
+    background-size: 22px;
+}
+
+.bds-star-yellow {
+    background-image: url(../../images/bds-star-yellow.png);
+    background-repeat: no-repeat;
+    background-position: 0px 4px;
+    background-size: 22px;
+}
+
+.link-btn,.link-btn:hover {
+    color: #00aff0;
+}
+.bds-scroller {
+    height: 640px;
+    display: block;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-right: 10px;
+}
+
+/* Let's get this party started */
+.bds-scroller::-webkit-scrollbar {
+    width: 2px;
+    background: rgba(0,0,0,0.5); 
+    
+}
+ 
+/* Track */
+.bds-scroller::-webkit-scrollbar-track {
+    -webkit-box-shadow: none; 
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    cursor: pointer !important;
+}
+ 
+/* Handle */
+.bds-scroller::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: white;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    cursor: pointer !important;
+    padding: 0px 5px;
+}
+.bds-scroller::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(0,0,0,0.6);  
+    cursor: pointer !important;
+}

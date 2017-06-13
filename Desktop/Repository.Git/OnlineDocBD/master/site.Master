@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="site.master.cs" Inherits="OnlineDocBD.master.site" %>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>OnlineDoc</title>
+    <meta charset="utf-8" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <noscript>
+        <meta http-equiv="Refresh" content="0;URL=enable-javascript.aspx">
+    </noscript>
+    <link rel="icon" href="<%: ResolveUrl("~/images/bds-favicon.png") %>" type="image/png" sizes="32x32">
+    <link href="<%: ResolveUrl("~/Styles/bootstrap.min.css") %>" rel="stylesheet" type="text/css" />
+    <link href="<%: ResolveUrl("~/Styles/style.css") %>" rel="stylesheet" type="text/css" />
+    <link href="<%: ResolveUrl("~/Styles/jquery.mCustomScrollbar.css") %>" rel="stylesheet" type="text/css" />
+    <link href="<%: ResolveUrl("~/Styles/kendo_css.css") %>" rel="stylesheet" type="text/css" />
+    <link href="<%: ResolveUrl("~/Styles/common/login-custom.css") %>" rel="stylesheet" type="text/css" />
+    <link href="<%: ResolveUrl("~/Styles/onlineDoc.style.css") %>" rel="stylesheet" type="text/css" />
+
+
+
+    <script type="text/javascript" src="<%: ResolveUrl("~/Scripts/jquery-1.11.0.min.js") %>"></script>
+    <script type="text/javascript" src="<%: ResolveUrl("~/Scripts/bootstrap.min.js") %>"></script>
+    <script type="text/javascript" src="<%: ResolveUrl("~/Scripts/jquery.mCustomScrollbar.js") %>"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script type="text/javascript" src="<%: ResolveUrl("~/Scripts/bootstrap-switch.js") %>"></script>
+    <script type="text/javascript" src="<%: ResolveUrl("~/Scripts/CircularLoader-v1.3.js") %>"></script>
+    <script type="text/javascript" src="<%: ResolveUrl("~/Scripts/flexcroll.js") %>"></script>
+    <script type="text/javascript" src="<%: ResolveUrl("~/Scripts/custom.js") %>"></script>
+    <script type="text/javascript" src="<%: ResolveUrl("~/Scripts/common/custom-login.js") %>"></script>
+    <script type="text/javascript" src="<%: ResolveUrl("~/scripts/common/bd-custom.js") %>"></script>
+    <script type="text/javascript" src="<%: ResolveUrl("~/Scripts/common/detect.min.js") %>"></script>
+
+    <%-- <script type="text/javascript">
+        var globalWCFUrl = "<%=  BDSKendoWebApp.Utilities.SiteSettings.WCFDynamicURL %>";
+        var baseUrl = "<%= BDSKendoWebApp.Utilities.SiteSettings.BaseUrl %>";
+
+    </script>--%>
+
+    <script type="text/javascript" src="<%: ResolveUrl("~/Scripts/common/browser-detection.js") %>"></script>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="login-page">
+    <form id="formLoginForgot" runat="server">
+        <asp:ScriptManager ID="scrptManager" runat="server" EnablePageMethods="true" EnablePartialRendering="true">
+        </asp:ScriptManager>
+        <aside class="left hidden-xs"></aside>
+        <aside class="right"  >
+            <section>
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </section>
+        </aside>
+    </form>
+</body>
+</html>

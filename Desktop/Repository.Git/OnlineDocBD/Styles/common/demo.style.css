@@ -1,0 +1,456 @@
+﻿body .btn {
+    font-size: 14px !important;
+    min-width: 80px !important;
+}
+
+.clear-div {
+    height: auto;
+    overflow: hidden;
+}
+
+.custom-container {
+    max-width: 1100px !important;
+    padding: 0px !important;
+}
+
+.hiddenSwitch {
+    display: none;
+}
+/*botton background color related css*/
+.btn-bg-color {
+    background-color: White !important;
+}
+
+/*header background color related css*/
+
+.ra-well-title-size {
+    color: rgb(51, 51, 51) !important;
+    font-family: Arial,sans-serif !important;
+    font-size: 20px !important;
+    font-variant: inherit !important;
+    font-weight: 500 !important;
+    margin-bottom: 15px !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding-left: 13px !important;
+    padding-right: 18px !important;
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 0px;
+}
+
+
+/*panel with inside panel's items related css*/
+
+.panlebarColaps .panel-body {
+    padding-left: 0px;
+    padding-right: 0px;
+    background: #FFFFFF !important;
+}
+
+label {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    font-family: Arial,sans-serif !important;
+    color: #707070 !important;
+}
+
+.panel-default > .panel-heading {
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #ccc !important;
+}
+
+.sure-msg {
+    padding: 5px 0px 0px !important;
+    font-size: 15px;
+}
+
+.modal-btn-pos {
+    padding: 0px;
+}
+
+.spn-required-red {
+    color: Red;
+}
+
+.panlebarColaps .panel-title a {
+    color: rgb(51, 51, 51) !important;
+    font-size: 20px !important;
+    font-family: Arial !important;
+    display: block;
+    font-variant: normal;
+    text-decoration: none !important;
+}
+
+.btn-bg-gray:hover {
+    text-decoration: none;
+    border-color: gray !important;
+    background-color: #e9e9e9 !important;
+    color: Black !important;
+    font-family: Arial,sans-serif !important;
+}
+
+.btn-bg-gray {
+    background-color: #f5f5f5 !important;
+    border-color: #ccc;
+}
+
+.btn-bg-gray {
+    display: inline-block;
+    padding: 4px 12px !important;
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border-radius: 4px;
+    text-shadow: 0 1px 0 #fff;
+    color: #595959 !important;
+    font-family: Arial,sans-serif !important;
+}
+
+.ra-well-title {
+    color: rgb(51, 51, 51) !important;
+    font-family: Arial,sans-serif !important;
+    font-size: 20px !important;
+    font-variant: inherit !important;
+    font-weight: 500 !important;
+    margin-bottom: 15px !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #f5f5f5 !important;
+    border-bottom: 1px solid #c5c5c5 !important;
+}
+
+.WellAll {
+    background-color: White !important;
+    border: 1px solid #E3E3E3;
+    border-radius: 4px;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 5px;
+    margin-top: 19px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05) inset;
+    font-family: Arial,sans-serif !important;
+}
+
+.k-picker-wrap.k-state-default {
+    font-size: 14px !important;
+    font-family: Arial,sans-serif !important;
+}
+
+.content-font-color {
+    font-size: 14px !important;
+    font-family: Arial,sans-serif !important;
+    color: #707070 !important;
+}
+
+.btn-bg-gray-red:hover {
+    text-decoration: none;
+    border-color: gray !important;
+    background-color: #e9e9e9 !important;
+    color: #FF0000 !important;
+    font-family: Arial,sans-serif !important;
+}
+
+.btn-bg-gray-red {
+    background-color: #f5f5f5 !important;
+    border-color: #ccc;
+}
+
+.btn-bg-gray-red {
+    display: inline-block;
+    padding: 4px 12px !important;
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border-radius: 4px;
+    text-shadow: 0 1px 0 #fff;
+    color: #595959 !important;
+    font-family: Arial,sans-serif !important;
+}
+
+.border-label .label-row {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.listview-details {
+    padding: 15px !important;
+}
+
+.popovermessage {
+    background-color: #4bc1ed; /*07B0EF*/
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    padding: 2px 6px 0px 5px;
+    margin-top: 7px;
+}
+
+    .popovermessage:focus, .popovermessage:active, .popovermessage:hover, .popovermessage:visited {
+        border: 1px solid #fff;
+        border-style: none;
+        box-shadow: none;
+        box-sizing: initial;
+    }
+
+.leftpadd7px {
+    padding-left: 7px;
+}
+
+.popover.fade.top.in, .popover.fade.top {
+    background-color: #4bc1ed;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    margin-top: -16px;
+}
+
+.popover.top > .arrow:after {
+    border-top-color: #4bc1ed !important;
+}
+
+.popovermessage:focus {
+    -webkit-focus-ring-color: auto 0px !important;
+}
+
+
+/*=================== Uploder Style ============== */
+
+.cloud-icon {
+    height: 30px;
+    width: 30px;
+    display: block;
+    float: left;
+    background: url(../../images/cloud-upload.png) no-repeat;
+    background-position: left 0px center;
+    background-size: 27px;
+    margin-top: -4px;
+}
+
+.newdocument {
+    overflow: hidden;
+    padding-top: 10px;
+    padding-left: 20%;
+    cursor: pointer;
+}
+
+    .newdocument .k-upload-status.k-upload-status-total {
+        display: none !important;
+    }
+
+    .newdocument.dropZoneElement p.dropImageHereText {
+        padding: 1px 0px;
+        font-size: 18px;
+        background: none;
+        cursor: pointer;
+        font-family: 'Lato', Arial,sans-serif !important;
+        color: #707070 !important;
+        word-spacing: 0px;
+        background: transparent !important;
+    }
+
+.k-button.k-upload-button {
+    background: none !important;
+    border: none;
+    color: rgb(0, 174, 239) !important;
+    padding: 0px !important;
+    font-size: 18px !important;
+    text-transform: lowercase;
+    text-align: left;
+    width: auto;
+    margin-left: 9px;
+    margin-top: -6px;
+}
+
+.edocnew-grid {
+    display: block;
+    float: left;
+    height: auto;
+    overflow: hidden;
+    width: 70%;
+    border: 1px dashed #ddd;
+    margin-top: 5px;
+}
+
+    .edocnew-grid .k-upload .k-dropzone {
+        padding: 2.5px 0px !important;
+        background: transparent !important;
+        padding-bottom: 10px !important;
+    }
+
+.newdocument .textWrapper {
+    float: left;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.dropImageHereText.k-dropzone-hovered {
+    background: #fff !important;
+    margin-bottom: 0px;
+    overflow: hidden;
+}
+
+.newdocument .k-widget.k-upload {
+    float: left;
+    overflow: hidden;
+    margin-top: 0px;
+    margin-left: -1px;
+    border: none !important;
+    max-width: 125px;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0px;
+}
+
+.newdocument .k-button.k-upload-button:hover {
+    background: none !important;
+    color: rgb(0, 174, 239) !important;
+}
+
+.newdocument .k-dropzone {
+    background: #fff !important;
+    background-color: #fff !important;
+    background-image: none !important;
+    border: 0px solid #fff !important;
+}
+
+.textWrapper.k-dropzone-hovered {
+    background: transparent !important;
+}
+
+.k-button.k-upload-button.k-state-focused, .newdocument .k-button.k-upload-button:active {
+    padding-top: 0px !important;
+}
+
+
+.k-file.k-file-invalid {
+    display: none;
+}
+
+.fullarea-foredoc {
+    height: auto;
+    overflow: hidden;
+    padding: 0px 17px 5px;
+}
+
+.km-switch.km-widget:hover {
+    cursor: pointer;
+}
+
+.km-switch-handle span {
+    font-size: 14px !important;
+    line-height: 20px !important;
+    width: 240%;
+    padding: 8px 20px;
+}
+
+.km-switch-handle {
+    background: #fff;
+}
+
+.km-switch-label-on {
+    color: rgb(255, 255, 255) !important;
+    background: rgb(29, 175, 235);
+    border-radius: 72px 0px 0px 72px;
+}
+
+.km-switch-label-off {
+    color: rgb(73, 86, 120) !important;
+    background: rgb(238, 238, 238) !important;
+    border-radius: 0px 72px 72px 0px;
+}
+
+.km-switch.km-widget {
+    border-radius: 35px;
+    border: 1px solid;
+    border-color: rgb(204, 204, 204);
+}
+
+.km-checkbox, .km-switch {
+    width: 110px;
+    line-height: 20px !important;
+    height: 35px;
+}
+
+    .km-switch.km-widget.km-switch-on .km-switch-label-on, .km-switch.km-widget.km-switch-off .km-switch-label-on {
+        left: -314%;
+    }
+
+    .km-switch.km-widget.km-switch-off .km-switch-label-off, .km-switch.km-widget.km-switch-on .km-switch-label-off {
+        left: 165%;
+    }
+
+
+
+
+.bds-bubble {
+   position: relative;
+   width: 279px;
+   height: 36px;
+   line-height: 36px;
+   color: rgb(112, 112, 112) !important;
+   text-align: center;
+   padding: 0px;
+   background: #ffffff;
+   border-radius: 6px;
+   box-shadow: 0px 0px 3px 1px rgba(219, 219, 219, 0.86);
+}
+
+.bds-bubble:after {
+   content: '';
+   position: absolute;
+   border-style: solid;
+   border-width: 0 16px 18px;
+   border-color: #ffffff transparent;
+   display: block;
+   width: 0;
+   z-index: 1;
+   top: -18px;
+   left: 123px;
+}
+
+
+.k-tool-group .k-picker-wrap.k-state-default {
+    max-width: 25px;
+}
+
+.k-tool-group .k-widget.k-colorpicker.k-header.k-editor-widget {
+    width: auto !important;
+}
+
+.k-tool-group {
+    float: left;
+}

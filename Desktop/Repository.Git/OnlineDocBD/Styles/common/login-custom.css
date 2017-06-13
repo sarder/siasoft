@@ -1,0 +1,119 @@
+﻿
+/* Fonts */
+@font-face {
+	font-family: Bold;
+    src: url('../fonts/OfeliaStd_Bold.eot') format('embedded-opentype'),
+         url('../fonts/OfeliaStd_Bold.woff') format('woff'),
+         url('../fonts/Ofelia_StdBold.otf') format('otf'),
+         url('../fonts/OfeliaStd_Bold.ttf') format('truetype');
+}
+@font-face {
+	font-family: Regular;
+    src: url('../fonts/OfeliaStd_Book.eot') format('embedded-opentype'),
+         url('../fonts/OfeliaStd_Book.woff') format('woff'),
+         url('../fonts/Ofelia_StdBook.otf') format('otf'),
+         url('../fonts/OfeliaStd_Book.ttf') format('truetype');
+}
+@font-face {
+	font-family: Light;
+    src: url('../fonts/OfeliaStd_Light.eot') format('embedded-opentype'),
+         url('../fonts/OfeliaStd_Light.woff') format('woff'),
+         url('../fonts/Ofelia_StdLight.otf') format('otf'),
+         url('../fonts/OfeliaStd_Light.ttf') format('truetype');
+}
+
+.new-logo-container
+{
+    margin-bottom: 7%;
+}
+
+.forget-group
+{
+        margin-top: 20px;
+}
+
+.login-page .right section .custom-margin
+{
+        margin-bottom: 3.5%;
+}
+
+.btn-popover
+{
+    width: 0px !important;
+    padding: 0px !important;
+    border: none !important;
+    margin: 0px auto;
+    display: block;
+}
+
+.login-page .right section .error-box
+{
+        width: 25vw;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type="password"] {
+        -webkit-text-stroke-width: .3em;
+        letter-spacing: 0.2em;
+        font-size: 15px;
+        text-indent: 5px;
+    }
+    
+}
+
+@-moz-document url-prefix() 
+{
+    
+    input[type="password"] {
+        -webkit-text-stroke-width: .0em;
+        letter-spacing: 0.1em;
+        font-size: 8px;
+        padding: 13.5px 12px;
+    }
+} 
+
+input[type='password'].form-control::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    font-size: 14px;
+    -webkit-text-stroke-width: 0;
+    letter-spacing: 0;
+}
+input[type='password'].form-control:-moz-placeholder, textarea:-moz-placeholder { 
+    font-size: 14px;
+    -webkit-text-stroke-width: 0;
+    letter-spacing: 0;
+}
+input[type='password'].form-control::-moz-placeholder, textarea::-moz-placeholder { 
+    font-size: 14px;
+    -webkit-text-stroke-width: 0;
+    letter-spacing: 0;
+}
+input[type='password'].form-control:-ms-input-placeholder, textarea:-ms-input-placeholder { 
+    font-size: 14px;
+    -webkit-text-stroke-width: 0;
+    letter-spacing: 0;
+}
+
+
+.clear-div
+{
+    height: auto;
+    overflow: hidden;
+}
+
+.popover-hidden
+{
+    margin-top: -36px;
+}
+
+.popover-hidden .btn
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bds-inactive-logo {
+    margin: auto;
+    max-width: 110px;
+    padding-top: 10px;
+}
