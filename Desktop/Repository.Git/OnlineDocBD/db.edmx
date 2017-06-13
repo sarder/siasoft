@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="OnlineDOCbdModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'OnlineDOCbd.dbo.GENDER' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="GENDER">
+          <Key>
+            <PropertyRef Name="GENDER_ID" />
+            <PropertyRef Name="GENDER_NAME" />
+          </Key>
+          <Property Name="GENDER_ID" Type="int" Nullable="false" />
+          <Property Name="GENDER_NAME" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'OnlineDOCbd.dbo.USER' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="USER">
+          <Key>
+            <PropertyRef Name="USER_ID" />
+            <PropertyRef Name="USER_FULL_NAME" />
+            <PropertyRef Name="USER_EMAIL_ADDRESS" />
+            <PropertyRef Name="USER_ZIP_CODE" />
+            <PropertyRef Name="USER_GENDER_ID" />
+            <PropertyRef Name="USER_HASH_PASSWORD" />
+          </Key>
+          <Property Name="USER_ID" Type="int" Nullable="false" />
+          <Property Name="USER_FULL_NAME" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="USER_MOBILE_NUMBER" Type="int" />
+          <Property Name="USER_EMAIL_ADDRESS" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="USER_ZIP_CODE" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="USER_GENDER_ID" Type="int" Nullable="false" />
+          <Property Name="USER_NID" Type="int" />
+          <Property Name="USER_PROFILE_PICTURE_URL" Type="varchar" MaxLength="255" />
+          <Property Name="USER_DOB" Type="datetime" />
+          <Property Name="USER_AGE_STATUS" Type="varchar" MaxLength="50" />
+          <Property Name="USER_CREATED_DATE" Type="datetime" />
+          <Property Name="USER_EDITED_DATE" Type="datetime" />
+          <Property Name="USER_IS_VARIFIED" Type="bit" />
+          <Property Name="USER_HASH_PASSWORD" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="OnlineDOCbdModelStoreContainer">
+          <EntitySet Name="GENDER" EntityType="Self.GENDER" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [GENDER].[GENDER_ID] AS [GENDER_ID], 
+    [GENDER].[GENDER_NAME] AS [GENDER_NAME]
+    FROM [dbo].[GENDER] AS [GENDER]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="USER" EntityType="Self.USER" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [USER].[USER_ID] AS [USER_ID], 
+    [USER].[USER_FULL_NAME] AS [USER_FULL_NAME], 
+    [USER].[USER_MOBILE_NUMBER] AS [USER_MOBILE_NUMBER], 
+    [USER].[USER_EMAIL_ADDRESS] AS [USER_EMAIL_ADDRESS], 
+    [USER].[USER_ZIP_CODE] AS [USER_ZIP_CODE], 
+    [USER].[USER_GENDER_ID] AS [USER_GENDER_ID], 
+    [USER].[USER_NID] AS [USER_NID], 
+    [USER].[USER_PROFILE_PICTURE_URL] AS [USER_PROFILE_PICTURE_URL], 
+    [USER].[USER_DOB] AS [USER_DOB], 
+    [USER].[USER_AGE_STATUS] AS [USER_AGE_STATUS], 
+    [USER].[USER_CREATED_DATE] AS [USER_CREATED_DATE], 
+    [USER].[USER_EDITED_DATE] AS [USER_EDITED_DATE], 
+    [USER].[USER_IS_VARIFIED] AS [USER_IS_VARIFIED], 
+    [USER].[USER_HASH_PASSWORD] AS [USER_HASH_PASSWORD]
+    FROM [dbo].[USER] AS [USER]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="OnlineDOCbdModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="GENDER">
+          <Key>
+            <PropertyRef Name="GENDER_ID" />
+            <PropertyRef Name="GENDER_NAME" />
+          </Key>
+          <Property Name="GENDER_ID" Type="Int32" Nullable="false" />
+          <Property Name="GENDER_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="OnlineDOCbdEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="GENDERs" EntityType="Self.GENDER" />
+          <EntitySet Name="USERs" EntityType="OnlineDOCbdModel.USER" />
+        </EntityContainer>
+        <EntityType Name="USER">
+          <Key>
+            <PropertyRef Name="USER_ID" />
+            <PropertyRef Name="USER_FULL_NAME" />
+            <PropertyRef Name="USER_EMAIL_ADDRESS" />
+            <PropertyRef Name="USER_ZIP_CODE" />
+            <PropertyRef Name="USER_GENDER_ID" />
+            <PropertyRef Name="USER_HASH_PASSWORD" />
+          </Key>
+          <Property Name="USER_ID" Type="Int32" Nullable="false" />
+          <Property Name="USER_FULL_NAME" Type="String" Nullable="false" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="USER_MOBILE_NUMBER" Type="Int32" />
+          <Property Name="USER_EMAIL_ADDRESS" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="USER_ZIP_CODE" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="USER_GENDER_ID" Type="Int32" Nullable="false" />
+          <Property Name="USER_NID" Type="Int32" />
+          <Property Name="USER_PROFILE_PICTURE_URL" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="USER_DOB" Type="DateTime" Precision="3" />
+          <Property Name="USER_AGE_STATUS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="USER_CREATED_DATE" Type="DateTime" Precision="3" />
+          <Property Name="USER_EDITED_DATE" Type="DateTime" Precision="3" />
+          <Property Name="USER_IS_VARIFIED" Type="Boolean" />
+          <Property Name="USER_HASH_PASSWORD" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="OnlineDOCbdModelStoreContainer" CdmEntityContainer="OnlineDOCbdEntities">
+          <EntitySetMapping Name="GENDERs">
+            <EntityTypeMapping TypeName="OnlineDOCbdModel.GENDER">
+              <MappingFragment StoreEntitySet="GENDER">
+                <ScalarProperty Name="GENDER_ID" ColumnName="GENDER_ID" />
+                <ScalarProperty Name="GENDER_NAME" ColumnName="GENDER_NAME" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="USERs">
+            <EntityTypeMapping TypeName="OnlineDOCbdModel.USER">
+              <MappingFragment StoreEntitySet="USER">
+                <ScalarProperty Name="USER_HASH_PASSWORD" ColumnName="USER_HASH_PASSWORD" />
+                <ScalarProperty Name="USER_IS_VARIFIED" ColumnName="USER_IS_VARIFIED" />
+                <ScalarProperty Name="USER_EDITED_DATE" ColumnName="USER_EDITED_DATE" />
+                <ScalarProperty Name="USER_CREATED_DATE" ColumnName="USER_CREATED_DATE" />
+                <ScalarProperty Name="USER_AGE_STATUS" ColumnName="USER_AGE_STATUS" />
+                <ScalarProperty Name="USER_DOB" ColumnName="USER_DOB" />
+                <ScalarProperty Name="USER_PROFILE_PICTURE_URL" ColumnName="USER_PROFILE_PICTURE_URL" />
+                <ScalarProperty Name="USER_NID" ColumnName="USER_NID" />
+                <ScalarProperty Name="USER_GENDER_ID" ColumnName="USER_GENDER_ID" />
+                <ScalarProperty Name="USER_ZIP_CODE" ColumnName="USER_ZIP_CODE" />
+                <ScalarProperty Name="USER_EMAIL_ADDRESS" ColumnName="USER_EMAIL_ADDRESS" />
+                <ScalarProperty Name="USER_MOBILE_NUMBER" ColumnName="USER_MOBILE_NUMBER" />
+                <ScalarProperty Name="USER_FULL_NAME" ColumnName="USER_FULL_NAME" />
+                <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
