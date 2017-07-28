@@ -102,7 +102,10 @@
     <Content Include="Default.aspx" />
     <Content Include="forgot-password.aspx" />
     <Content Include="Global.asax" />
+<<<<<<< HEAD
     <Content Include="Home.aspx" />
+=======
+>>>>>>> 57496149d7c2a7b34e72096f8c573333f190d85f
     <Content Include="images\login-left-bg.JPG" />
     <Content Include="Scripts\application\admin\admin-home.js" />
     <Content Include="Scripts\application\admin\admin-operation.js" />
@@ -291,7 +294,10 @@
     <Content Include="Styles\fonts\bootstrap\glyphicons-halflings-regular.svg" />
     <Content Include="Styles\fonts\fontawesome\fonts\_notes\dwsync.xml" />
     <Content Include="Styles\fonts\_notes\dwsync.xml" />
+<<<<<<< HEAD
     <Content Include="Styles\home-content\home.onlinedoc.css" />
+=======
+>>>>>>> 57496149d7c2a7b34e72096f8c573333f190d85f
     <Content Include="Styles\jquery.mCustomScrollbar.css" />
     <Content Include="Styles\kendo\Default\editor.png" />
     <Content Include="Styles\kendo\Default\imagebrowser.png" />
@@ -427,6 +433,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -434,6 +441,8 @@
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
+=======
+>>>>>>> 57496149d7c2a7b34e72096f8c573333f190d85f
     <Compile Include="master\login.Master.cs">
       <DependentUpon>login.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

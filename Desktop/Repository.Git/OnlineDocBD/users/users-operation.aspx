@@ -132,7 +132,11 @@
         <asp:Button ID="btnBack" runat="server" CssClass="btn btn-primary pull-left" Text="Back"
             OnClientClick="return LoginFormValidation();" />
 
+<<<<<<< HEAD
          <asp:Button ID="btnSaveUser" runat="server" CssClass="btn btn-success pull-right" Text="Save"
+=======
+         <asp:Button ID="btnSaveUser" runat="server" CssClass="btn btn-primary pull-right" Text="Back"
+>>>>>>> 57496149d7c2a7b34e72096f8c573333f190d85f
             OnClientClick="return LoginFormValidation();" />
 
     </div>
